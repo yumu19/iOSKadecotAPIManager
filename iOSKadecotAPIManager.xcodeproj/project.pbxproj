@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00741E518AF18DE007B06EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00741E418AF18DE007B06EA /* Foundation.framework */; };
+		A00741E718AF18DE007B06EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00741E618AF18DE007B06EA /* CoreGraphics.framework */; };
+		A00741E918AF18DE007B06EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00741E818AF18DE007B06EA /* UIKit.framework */; };
+		A00741EF18AF18DE007B06EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A00741ED18AF18DE007B06EA /* InfoPlist.strings */; };
+		A00741F118AF18DE007B06EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A00741F018AF18DE007B06EA /* main.m */; };
+		A00741F518AF18DE007B06EA /* YMRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A00741F418AF18DE007B06EA /* YMRAppDelegate.m */; };
+		A00741F818AF18DE007B06EA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00741F618AF18DE007B06EA /* Main_iPhone.storyboard */; };
+		A00741FB18AF18DE007B06EA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00741F918AF18DE007B06EA /* Main_iPad.storyboard */; };
+		A00741FE18AF18DE007B06EA /* YMRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00741FD18AF18DE007B06EA /* YMRViewController.m */; };
+		A007420018AF18DE007B06EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00741FF18AF18DE007B06EA /* Images.xcassets */; };
+		A007420718AF18DE007B06EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A007420618AF18DE007B06EA /* XCTest.framework */; };
+		A007420818AF18DE007B06EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00741E418AF18DE007B06EA /* Foundation.framework */; };
+		A007420918AF18DE007B06EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00741E818AF18DE007B06EA /* UIKit.framework */; };
+		A007421118AF18DE007B06EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A007420F18AF18DE007B06EA /* InfoPlist.strings */; };
+		A007421318AF18DE007B06EA /* iOSKadecotAPIManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A007421218AF18DE007B06EA /* iOSKadecotAPIManagerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A007420A18AF18DE007B06EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00741D918AF18DE007B06EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00741E018AF18DE007B06EA;
+			remoteInfo = iOSKadecotAPIManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00741E118AF18DE007B06EA /* iOSKadecotAPIManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSKadecotAPIManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00741E418AF18DE007B06EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A00741E618AF18DE007B06EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A00741E818AF18DE007B06EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A00741EC18AF18DE007B06EA /* iOSKadecotAPIManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSKadecotAPIManager-Info.plist"; sourceTree = "<group>"; };
+		A00741EE18AF18DE007B06EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A00741F018AF18DE007B06EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A00741F218AF18DE007B06EA /* iOSKadecotAPIManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSKadecotAPIManager-Prefix.pch"; sourceTree = "<group>"; };
+		A00741F318AF18DE007B06EA /* YMRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMRAppDelegate.h; sourceTree = "<group>"; };
+		A00741F418AF18DE007B06EA /* YMRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRAppDelegate.m; sourceTree = "<group>"; };
+		A00741F718AF18DE007B06EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A00741FA18AF18DE007B06EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A00741FC18AF18DE007B06EA /* YMRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMRViewController.h; sourceTree = "<group>"; };
+		A00741FD18AF18DE007B06EA /* YMRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMRViewController.m; sourceTree = "<group>"; };
+		A00741FF18AF18DE007B06EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A007420518AF18DE007B06EA /* iOSKadecotAPIManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSKadecotAPIManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A007420618AF18DE007B06EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A007420E18AF18DE007B06EA /* iOSKadecotAPIManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSKadecotAPIManagerTests-Info.plist"; sourceTree = "<group>"; };
+		A007421018AF18DE007B06EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A007421218AF18DE007B06EA /* iOSKadecotAPIManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSKadecotAPIManagerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00741DE18AF18DE007B06EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00741E718AF18DE007B06EA /* CoreGraphics.framework in Frameworks */,
+				A00741E918AF18DE007B06EA /* UIKit.framework in Frameworks */,
+				A00741E518AF18DE007B06EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A007420218AF18DE007B06EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A007420718AF18DE007B06EA /* XCTest.framework in Frameworks */,
+				A007420918AF18DE007B06EA /* UIKit.framework in Frameworks */,
+				A007420818AF18DE007B06EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00741D818AF18DE007B06EA = {
+			isa = PBXGroup;
+			children = (
+				A00741EA18AF18DE007B06EA /* iOSKadecotAPIManager */,
+				A007420C18AF18DE007B06EA /* iOSKadecotAPIManagerTests */,
+				A00741E318AF18DE007B06EA /* Frameworks */,
+				A00741E218AF18DE007B06EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00741E218AF18DE007B06EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00741E118AF18DE007B06EA /* iOSKadecotAPIManager.app */,
+				A007420518AF18DE007B06EA /* iOSKadecotAPIManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00741E318AF18DE007B06EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A00741E418AF18DE007B06EA /* Foundation.framework */,
+				A00741E618AF18DE007B06EA /* CoreGraphics.framework */,
+				A00741E818AF18DE007B06EA /* UIKit.framework */,
+				A007420618AF18DE007B06EA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A00741EA18AF18DE007B06EA /* iOSKadecotAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				A00741F318AF18DE007B06EA /* YMRAppDelegate.h */,
+				A00741F418AF18DE007B06EA /* YMRAppDelegate.m */,
+				A00741F618AF18DE007B06EA /* Main_iPhone.storyboard */,
+				A00741F918AF18DE007B06EA /* Main_iPad.storyboard */,
+				A00741FC18AF18DE007B06EA /* YMRViewController.h */,
+				A00741FD18AF18DE007B06EA /* YMRViewController.m */,
+				A00741FF18AF18DE007B06EA /* Images.xcassets */,
+				A00741EB18AF18DE007B06EA /* Supporting Files */,
+			);
+			path = iOSKadecotAPIManager;
+			sourceTree = "<group>";
+		};
+		A00741EB18AF18DE007B06EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00741EC18AF18DE007B06EA /* iOSKadecotAPIManager-Info.plist */,
+				A00741ED18AF18DE007B06EA /* InfoPlist.strings */,
+				A00741F018AF18DE007B06EA /* main.m */,
+				A00741F218AF18DE007B06EA /* iOSKadecotAPIManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A007420C18AF18DE007B06EA /* iOSKadecotAPIManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A007421218AF18DE007B06EA /* iOSKadecotAPIManagerTests.m */,
+				A007420D18AF18DE007B06EA /* Supporting Files */,
+			);
+			path = iOSKadecotAPIManagerTests;
+			sourceTree = "<group>";
+		};
+		A007420D18AF18DE007B06EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A007420E18AF18DE007B06EA /* iOSKadecotAPIManagerTests-Info.plist */,
+				A007420F18AF18DE007B06EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00741E018AF18DE007B06EA /* iOSKadecotAPIManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A007421618AF18DE007B06EA /* Build configuration list for PBXNativeTarget "iOSKadecotAPIManager" */;
+			buildPhases = (
+				A00741DD18AF18DE007B06EA /* Sources */,
+				A00741DE18AF18DE007B06EA /* Frameworks */,
+				A00741DF18AF18DE007B06EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSKadecotAPIManager;
+			productName = iOSKadecotAPIManager;
+			productReference = A00741E118AF18DE007B06EA /* iOSKadecotAPIManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A007420418AF18DE007B06EA /* iOSKadecotAPIManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A007421918AF18DE007B06EA /* Build configuration list for PBXNativeTarget "iOSKadecotAPIManagerTests" */;
+			buildPhases = (
+				A007420118AF18DE007B06EA /* Sources */,
+				A007420218AF18DE007B06EA /* Frameworks */,
+				A007420318AF18DE007B06EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A007420B18AF18DE007B06EA /* PBXTargetDependency */,
+			);
+			name = iOSKadecotAPIManagerTests;
+			productName = iOSKadecotAPIManagerTests;
+			productReference = A007420518AF18DE007B06EA /* iOSKadecotAPIManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00741D918AF18DE007B06EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YMR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = yumulab;
+				TargetAttributes = {
+					A007420418AF18DE007B06EA = {
+						TestTargetID = A00741E018AF18DE007B06EA;
+					};
+				};
+			};
+			buildConfigurationList = A00741DC18AF18DE007B06EA /* Build configuration list for PBXProject "iOSKadecotAPIManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00741D818AF18DE007B06EA;
+			productRefGroup = A00741E218AF18DE007B06EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00741E018AF18DE007B06EA /* iOSKadecotAPIManager */,
+				A007420418AF18DE007B06EA /* iOSKadecotAPIManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00741DF18AF18DE007B06EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00741FB18AF18DE007B06EA /* Main_iPad.storyboard in Resources */,
+				A007420018AF18DE007B06EA /* Images.xcassets in Resources */,
+				A00741F818AF18DE007B06EA /* Main_iPhone.storyboard in Resources */,
+				A00741EF18AF18DE007B06EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A007420318AF18DE007B06EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A007421118AF18DE007B06EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00741DD18AF18DE007B06EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00741FE18AF18DE007B06EA /* YMRViewController.m in Sources */,
+				A00741F118AF18DE007B06EA /* main.m in Sources */,
+				A00741F518AF18DE007B06EA /* YMRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A007420118AF18DE007B06EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A007421318AF18DE007B06EA /* iOSKadecotAPIManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A007420B18AF18DE007B06EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00741E018AF18DE007B06EA /* iOSKadecotAPIManager */;
+			targetProxy = A007420A18AF18DE007B06EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A00741ED18AF18DE007B06EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A00741EE18AF18DE007B06EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A00741F618AF18DE007B06EA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A00741F718AF18DE007B06EA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A00741F918AF18DE007B06EA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A00741FA18AF18DE007B06EA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A007420F18AF18DE007B06EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A007421018AF18DE007B06EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A007421418AF18DE007B06EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A007421518AF18DE007B06EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A007421718AF18DE007B06EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSKadecotAPIManager/iOSKadecotAPIManager-Prefix.pch";
+				INFOPLIST_FILE = "iOSKadecotAPIManager/iOSKadecotAPIManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A007421818AF18DE007B06EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSKadecotAPIManager/iOSKadecotAPIManager-Prefix.pch";
+				INFOPLIST_FILE = "iOSKadecotAPIManager/iOSKadecotAPIManager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A007421A18AF18DE007B06EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSKadecotAPIManager.app/iOSKadecotAPIManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSKadecotAPIManager/iOSKadecotAPIManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSKadecotAPIManagerTests/iOSKadecotAPIManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A007421B18AF18DE007B06EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSKadecotAPIManager.app/iOSKadecotAPIManager";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSKadecotAPIManager/iOSKadecotAPIManager-Prefix.pch";
+				INFOPLIST_FILE = "iOSKadecotAPIManagerTests/iOSKadecotAPIManagerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00741DC18AF18DE007B06EA /* Build configuration list for PBXProject "iOSKadecotAPIManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A007421418AF18DE007B06EA /* Debug */,
+				A007421518AF18DE007B06EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A007421618AF18DE007B06EA /* Build configuration list for PBXNativeTarget "iOSKadecotAPIManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A007421718AF18DE007B06EA /* Debug */,
+				A007421818AF18DE007B06EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A007421918AF18DE007B06EA /* Build configuration list for PBXNativeTarget "iOSKadecotAPIManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A007421A18AF18DE007B06EA /* Debug */,
+				A007421B18AF18DE007B06EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00741D918AF18DE007B06EA /* Project object */;
+}
