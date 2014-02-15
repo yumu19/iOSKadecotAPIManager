@@ -9,6 +9,8 @@
 #import "YMRViewController.h"
 
 @interface YMRViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *cookRiceButton;
+@property (weak, nonatomic) IBOutlet UIButton *washButton;
 
 @end
 
@@ -19,6 +21,20 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)didTapCookRiceButton:(id)sender {
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:@"" message:@"Cook Rice"
+                              delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)didTapWashButton:(id)sender {
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:@"" message:@"Wash"
+                              delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
