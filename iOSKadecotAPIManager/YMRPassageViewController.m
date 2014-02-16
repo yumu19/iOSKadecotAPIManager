@@ -1,43 +1,50 @@
 //
-//  YMRViewController.m
+//  YMRPassageViewController.m
 //  iOSKadecotAPIManager
 //
-//  Created by yumu on 2014/02/15.
+//  Created by yumu on 2014/02/16.
 //  Copyright (c) 2014年 yumulab. All rights reserved.
 //
 
-#import "YMRViewController.h"
+#import "YMRPassageViewController.h"
 #import "YMRiOSKadecotAPIManeger.h"
-#import "YMRiBeaconManager.h"
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
 #define UUID @"B9407F30-F5F8-466E-AFF9-25556B57FE6D"
 
-@interface YMRViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *cookRiceButton;
-@property (weak, nonatomic) IBOutlet UIButton *washButton;
-@property (weak, nonatomic) IBOutlet UIButton *localPushButton;
-@property (weak, nonatomic) IBOutlet UIButton *lightOnButton;
-@property (weak, nonatomic) IBOutlet UIButton *lightOffButton;
-@property (weak, nonatomic) IBOutlet UIButton *microwaveStartButton;
+@interface YMRPassageViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *light1OnButton;
+@property (weak, nonatomic) IBOutlet UIButton *light2Offbutton;
+@property (weak, nonatomic) IBOutlet UIButton *light2OnButton;
+@property (weak, nonatomic) IBOutlet UIButton *light2OffButton;
+@property (weak, nonatomic) IBOutlet UIButton *light3OnButton;
+@property (weak, nonatomic) IBOutlet UIButton *light3OffButton;
+@property (weak, nonatomic) IBOutlet UIButton *light4OnButton;
+@property (weak, nonatomic) IBOutlet UIButton *light4OffButton;
+@property (weak, nonatomic) IBOutlet UIButton *changeButton;
 
 @property (nonatomic) CLLocationManager* locationManager;
 @property (nonatomic) NSUUID *proximityUUID;
 @property (nonatomic) CLBeaconRegion *beaconRegion;
-@property (weak, nonatomic) IBOutlet UIButton *changeButton;
 
 @end
 
-@implementation YMRViewController {
-    YMRiBeaconManager* _iBeaconManager;
+@implementation YMRPassageViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    //_iBeaconManager = [[YMRiBeaconManager alloc] init];
+	// Do any additional setup after loading the view.
     
     if ([CLLocationManager isMonitoringAvailableForClass:[CLBeaconRegion class]]) {
         if ([CLLocationManager isMonitoringAvailableForClass:[CLCircularRegion class]]) {
@@ -53,43 +60,6 @@
         }
         
     }
-}
-
-- (IBAction)didTapCookRiceButton:(id)sender {
-    [YMRiOSKadecotAPIManeger setDevice:@"RiceCooker" EPC:@"0xB2" property:@"0x41"];
-}
-
-- (IBAction)didTapMicrowaveStartButton:(id)sender {
-    [YMRiOSKadecotAPIManeger setDevice:@"CombinationMicrowaveOven" EPC:@"0xB2" property:@"0x41"];    
-}
-
-
-
-- (IBAction)didTapWashButton:(id)sender {
-    UIAlertView *alert =
-    [[UIAlertView alloc] initWithTitle:@"" message:@"Wash"
-                              delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-}
-
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (IBAction)didTapLocalPushButton:(id)sender {
-    [self sendLocalNotificationForMessage:@"test"];
-}
-
-- (void)sendLocalNotificationForMessage:(NSString *)message
-{
-    UILocalNotification *localNotification = [UILocalNotification new];
-    localNotification.alertBody = message;
-    localNotification.fireDate = [NSDate date];
-    localNotification.soundName = UILocalNotificationDefaultSoundName;
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
@@ -121,6 +91,7 @@
     }
 }
 
+
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
     if (beacons.count > 0) {
@@ -135,20 +106,19 @@
         [[UIAlertView alloc] initWithTitle:@"" message:message
                                   delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-        UINavigationController *nc = [storyboard instantiateViewControllerWithIdentifier:@"passageView"];
+        UINavigationController *nc = [storyboard instantiateViewControllerWithIdentifier:@"kitchenView"];
         
         // Beacon の距離でメッセージを変える
         switch (nearestBeacon.proximity) {
             case CLProximityImmediate:
                 rangeMessage = @"Range Immediate: ";
+                [self presentViewController:nc animated:YES completion:nil];
                 break;
             case CLProximityNear:
                 rangeMessage = @"Range Near: ";
-                [self presentViewController:nc animated:YES completion:nil];
                 break;
             case CLProximityFar:
                 rangeMessage = @"Range Far: ";
-                [self presentViewController:nc animated:YES completion:nil];
                 break;
             default:
                 rangeMessage = @"Range Unknown: ";
@@ -156,7 +126,7 @@
         }
         
         // ローカル通知
-
+        
         //        [self sendLocalNotificationForMessage:[rangeMessage stringByAppendingString:message]];
     }
 }
@@ -180,9 +150,44 @@
             break;
     }
 }
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (IBAction)didTapLight1OnButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting" EPC:@"0x80" property:@"0x30"];
+}
+- (IBAction)didTapLight1OffButton:(id)sender {
+        [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting" EPC:@"0x80" property:@"0x31"];
+}
+- (IBAction)didTapLight2OnButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting2" EPC:@"0x80" property:@"0x30"];
+}
+
+- (IBAction)didTapLight2OffButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting2" EPC:@"0x80" property:@"0x31"];
+}
+
+- (IBAction)didTapLight3OnButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting3" EPC:@"0x80" property:@"0x30"];
+}
+
+- (IBAction)didTapLight3OffButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting3" EPC:@"0x80" property:@"0x31"];
+}
+
+- (IBAction)didTapLight4OnButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting4" EPC:@"0x80" property:@"0x30"];
+}
+
+- (IBAction)didTapLight4OffButton:(id)sender {
+     [YMRiOSKadecotAPIManeger setDevice:@"GeneralLighting4" EPC:@"0x80" property:@"0x31"];
+}
 - (IBAction)didTapChangeButton:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-    UINavigationController *nc = [storyboard instantiateViewControllerWithIdentifier:@"passageView"];
+    UINavigationController *nc = [storyboard instantiateViewControllerWithIdentifier:@"kitchenView"];
     [self presentViewController:nc animated:YES completion:nil];
 }
 

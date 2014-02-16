@@ -1,5 +1,5 @@
 //
-//  YMRiOSKadecotAPIManeger.h
+//  YMRiBeaconManager.h
 //  iOSKadecotAPIManager
 //
 //  Created by yumu on 2014/02/15.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YMRiOSKadecotAPIManeger : NSObject
-
-+(void)setDevice:(NSString*)nickname EPC:(NSString*)EPC property:(NSString*)property;
+@interface YMRiBeaconManager : NSObject
 
 @end
